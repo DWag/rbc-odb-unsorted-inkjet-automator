@@ -22,8 +22,8 @@ $inkjet = ""
 
 while Not $continue
 	$jobnumber = InputBox("Job Number",$prompt & "Please enter the Job Number:",$jobnumber) ; Prompt user for total number of codes to place into the 1UP file.
-	$inkjet = "\\kcimail2\inkjet\" & StringRight($jobnumber,5) & ".1UP"
-	$inkjetR = "\\kcimail2\inkjet\" & StringRight($jobnumber,5) & "R.1UP"
+	$inkjet = "\\stash\inkjet\" & StringRight($jobnumber,5) & ".1UP"
+	$inkjetR = "\\stash\inkjet\" & StringRight($jobnumber,5) & "R.1UP"
 	if Not FileExists($inkjet) then
 		$continue = True
 	else
